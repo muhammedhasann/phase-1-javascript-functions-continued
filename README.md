@@ -76,9 +76,9 @@ razzle("Methuselah", "T'challah"); //=> Methuselah razzle-dazzles T'challah!
 ```
 
 **LAB**: Implement a function called `saturdayFun`. It should return a `String`
-like `"This Saturday, I want to ....!"` Fill in the `...` with the activity
-that's passed in as the first parameter. If nothing is passed in, default to
-`"roller-skate"`. Run `npm test` to verify you've gotten the first set of
+function saturdayFun(activity: string = "roller-skate"): string {
+  return `This Saturday, I want to ${activity}!`;
+}
 tests passing before continuing with the lesson.
 
 ## Define `Hoisting`
@@ -520,3 +520,5 @@ this module.
 [2ality]: http://2ality.com/2012/09/expressions-vs-statements.html
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements
 [mdn-fn]: https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function
+
+
